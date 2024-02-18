@@ -1,6 +1,6 @@
 import librosa
 
-# Loading the audio file
+# Loading audio file
 audio_file = "audio_sorohanro_-_solo-trumpet-06.ogg"
 y, sr = librosa.load(audio_file)
 
