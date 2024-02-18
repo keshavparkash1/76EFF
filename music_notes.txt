@@ -1,0 +1,22 @@
+Here are the notes and durations for a Sonic Pi program to compose the complete music of "Twinkle Twinkle Little Star":
+
+```ruby
+# Define the notes and durations
+notes = [:c4, :c4, :g4, :g4, :a4, :a4, :g4, :f4, :f4, :e4, :e4, :d4, :d4, :c4,
+         :g4, :g4, :f4, :f4, :e4, :e4, :d4, :g4, :g4, :f4, :f4, :e4, :e4, :d4,
+         :g4, :g4, :f4, :f4, :e4, :e4, :d4, :c4, :c4, :g4, :g4, :a4, :a4, :g4,
+         :f4, :f4, :e4, :e4, :d4, :d4, :c4]
+
+durations = [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 
+             0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1,
+             0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1,
+             0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
+
+# Play the song
+notes.zip(durations).each do |note, duration|
+  play note
+  sleep duration
+end
+```
+
+You can copy and paste this code into Sonic Pi to hear the complete music of "Twinkle Twinkle Little Star".
